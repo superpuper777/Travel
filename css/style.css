@@ -125,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -134,15 +134,15 @@ table {
   border-spacing: 0;
 }
 
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
@@ -433,7 +433,6 @@ textarea {
   color: #222;
 }
 
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -467,37 +466,37 @@ textarea {
 
 /* lato-regular - latin */
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'),
-    url('../fonts/lato-v16-latin-regular.woff2') format('woff2'),
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("../fonts/lato-v16-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/lato-v16-latin-regular.woff') format('woff');
+      url("../fonts/lato-v16-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lato-700 - latin */
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'),
-    url('../fonts/lato-v16-latin-700.woff2') format('woff2'),
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("../fonts/lato-v16-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/lato-v16-latin-700.woff') format('woff');
+      url("../fonts/lato-v16-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* lato-900 - latin */
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 900;
-  src: local('Lato Black'), local('Lato-Black'),
-    url('../fonts/lato-v16-latin-900.woff2') format('woff2'),
+  src: local("Lato Black"), local("Lato-Black"),
+    url("../fonts/lato-v16-latin-900.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/lato-v16-latin-900.woff') format('woff');
+      url("../fonts/lato-v16-latin-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -507,7 +506,7 @@ html {
 }
 
 body {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-size: 16px;
   line-height: 1.2;
@@ -519,6 +518,11 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .wrapper {
@@ -562,11 +566,10 @@ body {
 .header__link:hover,
 .header__link:focus,
 .header__link:active {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 /*Header styles end*/
-
 
 /*Intro styles start*/
 .intro {
@@ -604,7 +607,7 @@ body {
   background: transparent url(../img/svg/circle-icon.svg) no-repeat left top;
   background-size: 20px;
   border: none;
-  border-bottom: 2px solid #BFC0C5;
+  border-bottom: 2px solid #bfc0c5;
   margin-right: 60px;
   padding-left: 43px;
   padding-bottom: 22px;
@@ -627,8 +630,9 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: white;
-  background: #1B7DFF;
+  background: #1b7dff;
   border: none;
+  margin-bottom: 376px;
 }
 
 .search-form__submit:hover,
@@ -638,3 +642,79 @@ body {
 }
 
 /*Intro styles end*/
+
+/*Benefits styles start*/
+.benefits {
+  margin-bottom: 131px;
+}
+.benefits__wrap {
+  position: relative;
+  max-width: 1260px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+}
+
+.benefits__title {
+  width: 100%;
+  position: absolute;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  padding: 93px 100px 88px 100px;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: white;
+}
+.benefits__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 55px;
+  padding: 0 100px;
+}
+
+.benefits__card {
+  grid-column: span 1;
+}
+
+.benefits__card__wrap {
+  max-width: 66px;
+  margin-bottom: 37px;
+}
+
+.benefits__card-pic {
+  display: block;
+}
+
+.benefits__card-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+
+.benefits__card-desc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 39px;
+}
+
+.benefits__card-more {
+  display: inline-block;
+  padding-right: 59px;
+  margin-bottom: 112px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  text-decoration: none;
+  background: url(../img/svg/arrow-right-icon.svg) no-repeat 95% center;
+  transition: 1s all;
+}
+
+.benefits__card-more:hover,
+.benefits__card-more:focus {
+  background: url(../img/svg/arrow-right-icon.svg) no-repeat right center;
+}
+
+/*Benefits styles end*/
