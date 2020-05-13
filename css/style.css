@@ -784,7 +784,6 @@ img {
 .places__card {
   position: relative;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .places__card::after {
@@ -848,3 +847,137 @@ img {
 }
 
 /* Places styles end */
+
+/* Tours styles start */
+.tours {
+  margin-bottom: 139px;
+}
+
+.tours__tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 108px;
+  margin-bottom: 103px;
+}
+
+.tour__info {
+  padding-left: 45px;
+}
+
+.tour__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 85px;
+}
+
+.tour__desc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 58px;
+}
+
+.tour__link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  text-decoration: none;
+  padding-right: 59px;
+  background: url(../img/svg/arrow-right-icon.svg) no-repeat right center;
+}
+
+.tour__link:hover,
+.tour__link:focus {
+  opacity: 0.65;
+}
+/* Tours styles end */
+
+/* Top places styles start */
+.top__places {
+  margin-bottom: 86px;
+}
+
+.top__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 58px;
+  row-gap: 58px;
+}
+
+.top__card {
+  display: flex;
+  flex-direction: column;
+}
+.top__title {
+  margin-bottom: 54px; /*74px*/
+}
+
+.top__card-pic {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.top__card-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 25px;
+  /* background: rgba(21, 24, 36, 0.6); */
+}
+
+.top__card-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  margin: 0 auto 0 0;
+}
+
+.top__card-likes {
+  padding-right: 20px;
+  margin-right: 14px;
+  background: url(../img/svg/heard-icon.svg) no-repeat right center;
+}
+
+.top__card-comments {
+  padding-right: 23px;
+  background: url(../img/svg/comment-icon.svg) no-repeat right center;
+}
+
+.top__card-likes-value,
+.top__card-comments-value {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.top__card-desc {
+  margin-bottom: 31px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.top__card-more {
+  width: 118px;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  background: #006dfe;
+  margin: auto 0 0 0;
+}
+
+.top__card-more:hover,
+.top__card-more:focus,
+.top__card-more:active {
+  background: #0c54b5;
+}
+/* Top places styles end */
