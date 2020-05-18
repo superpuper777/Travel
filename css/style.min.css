@@ -474,7 +474,7 @@ img {
 
 .intro {
   min-height: 100vh;
-  background: url(/img/intro-bg-min.jpg) no-repeat center;
+  background: url(travel/img/intro-bg-min.jpg) no-repeat center;
   background-size: cover;
   padding-top: 263px;
   padding-bottom: 223px
@@ -510,7 +510,7 @@ img {
 
 .search-form__field {
   width: 297px;
-  background: transparent url(/img/svg/circle-icon.svg) no-repeat left top;
+  background: transparent url(travel/img/svg/circle-icon.svg) no-repeat left top;
   background-size: 20px;
   border: none;
   border-bottom: 2px solid #bfc0c5;
@@ -649,7 +649,7 @@ img {
   line-height: 24px;
   color: #006dfe;
   text-decoration: none;
-  background: url(/img/svg/arrow-right-icon.svg) no-repeat 95% center;
+  background: url(travel/img/svg/arrow-right-icon.svg) no-repeat 95% center;
   -webkit-transition: 1s all;
   -o-transition: 1s all;
   transition: 1s all
@@ -657,7 +657,7 @@ img {
 
 .benefits__card-more:focus,
 .benefits__card-more:hover {
-  background: url(/img/svg/arrow-right-icon.svg) no-repeat right center
+  background: url(travel/img/arrow-right-icon.svg) no-repeat right center
 }
 
 .places {
@@ -688,7 +688,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: #006dfe;
-  background: url(/img/svg/arrow-right-icon.svg) no-repeat right center;
+  background: url(travel/img/arrow-right-icon.svg) no-repeat right center;
   padding-right: 59px
 }
 
@@ -818,7 +818,7 @@ img {
   color: #006dfe;
   text-decoration: none;
   padding-right: 59px;
-  background: url(/img/svg/arrow-right-icon.svg) no-repeat right center
+  background: url(travel/img/arrow-right-icon.svg) no-repeat right center
 }
 
 .tour__link:focus,
@@ -892,12 +892,12 @@ img {
 .top__card-likes {
   padding-right: 20px;
   margin-right: 14px;
-  background: url(/img/svg/heard-icon.svg) no-repeat right center
+  background: url(travel/img/heard-icon.svg) no-repeat right center
 }
 
 .top__card-comments {
   padding-right: 23px;
-  background: url(/img/svg/comment-icon.svg) no-repeat right center
+  background: url(travel/img/comment-icon.svg) no-repeat right center
 }
 
 .top__card-comments-value,
@@ -1068,7 +1068,7 @@ img {
   }
 
   .tours {
-    margin-bottom: 60px
+    margin-bottom: 60px;
   }
 
   .tours__tour {
